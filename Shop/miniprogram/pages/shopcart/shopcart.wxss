@@ -1,0 +1,183 @@
+/*外部容器*/
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: rgb(230, 224, 224);
+} 
+
+/*整体列表*/
+.carts-list {
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx 40rpx;
+  margin-bottom: 80rpx; 
+  margin-top:40rpx;
+  padding: 0 20rpx;
+}
+
+.titles {
+  background: white;
+  width: 100%;
+  height: 40rpx;
+  justify-content: space-between;
+  position: fixed;
+  top: 0rpx;
+  text-align: end;
+  padding-right: 120rpx;
+  font-size:8pt;
+  color:rgb(90, 86, 86);
+  background-color: white;
+  border-bottom: 1px solid #eee;
+}
+
+/*每行单元格*/
+.carts-item {
+  display: flex;
+  flex-direction: row;
+  height:200rpx;
+  /*width属性解决标题文字太短而缩略图偏移*/
+  width:100%;
+  padding: 30rpx 0;
+  margin-top:30rpx;
+  background-color: white;
+  border-radius: 2%;
+}
+
+/*左部图片*/
+.carts-image {
+  width:150rpx;
+  height:150rpx;
+}
+
+
+/*右部描述*/
+.carts-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+/*右上部分标题*/
+.carts-title {
+  margin: 10rpx;
+  font-size: 30rpx;
+  margin-right: 50rpx;
+}
+
+.carts-retail{
+  background-color: rgb(230, 224, 224);
+  font-size: 8pt;
+  width: fit-content;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+  margin-right: 50rpx;
+  margin-left:10rpx;
+  display: inline-block;
+  border-radius: 5%;
+  white-space: nowrap;
+  color:rgb(190, 187, 187);
+  max-width: 100%;
+}
+
+/*右下部分价格与数量*/
+.carts-subtitle {
+  font-size: 35rpx;
+  color:darkgray;
+  padding: 0 20rpx;
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+/*价格*/
+.carts-price {
+  color: #f60;
+  font-weight: bold;
+}
+/*复选框样式*/
+.carts-list icon {
+  margin-top: 60rpx;
+  margin-right: 20rpx;
+}
+.stepper{
+  background-color: rgb(230, 224, 224);
+  display: flex;
+  color:white;
+  margin-right: 0rpx;
+  width: 150rpx;
+  height:50rpx;
+  border-radius: 25px;
+  
+}
+.stepper .disabled{
+  flex:1.5;
+  text-align: center;
+  line-height: 50rpx;
+  color: rgb(216, 216, 216);
+}
+.stepper .value1{
+  flex:2;
+  text-align: center;
+  color:rgb(36, 34, 34);
+}
+.stepper .normal{
+  flex:1.5;
+  line-height: 50rpx;
+  text-align: center;
+  color: rgb(143, 140, 140);
+}
+/*底部按钮*/
+.carts-footer {
+  background: white;
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0rpx;
+  border-top: 1px solid #eee;
+  background-color: antiquewhite;
+}
+
+/*复选框*/
+.carts-footer icon {
+  margin-left: 20rpx;
+  margin-top: 15rpx;
+  float: left;
+}
+
+/*全选字样*/
+.carts-footer .text1 {
+  font-size: 30rpx;
+  margin-left: 8rpx;
+  height: 80rpx;
+  float: left;
+  line-height: 80rpx;
+  margin-bottom: 50rpx;
+}
+.carts-footer .text2 {
+  margin-left: 265rpx;
+  float: left;
+  color:red;
+  line-height: 80rpx;
+}
+/*立即结算按钮*/
+.carts-footer .button {
+  width:120rpx;
+  border-radius: 25rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  margin-top:15rpx;
+  margin-right: 30rpx;
+  text-align: center;
+  background-color: #f60;
+  color: white;
+  font-size: 10pt;
+}

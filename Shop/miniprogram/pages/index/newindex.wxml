@@ -1,0 +1,8 @@
+<view style="flex=1">
+  <view wx:for="{{goodlist2}}" class="img" wx:key="*this">
+    <navigator url="/pages/goodsDetails/goodsDetails?gid={{item.gid}}">
+      <image src="/{{item.gphoto}}"/>
+      <text space="emsp" user-select="true">{{item.gname}}</text>
+    </navigator>
+    </view>
+</view>
